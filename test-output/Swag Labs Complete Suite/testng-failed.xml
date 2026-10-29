@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Swag Labs Complete Suite]">
+  <test thread-count="5" name="All End-to-End, UI, and Negative Tests(failed)">
+    <classes>
+      <class name="testpkg.Product_test">
+        <methods>
+          <include name="browser_launch"/>
+          <include name="testProductCatalog"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testpkg.Product_test -->
+    </classes>
+  </test> <!-- All End-to-End, UI, and Negative Tests(failed) -->
+</suite> <!-- Failed suite [Swag Labs Complete Suite] -->

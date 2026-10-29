@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Swag Labs Automation Suite]">
+  <test thread-count="5" name="End-to-End Tests(failed)">
+    <classes>
+      <class name="testpkg.Checkout_overview_test">
+        <methods>
+          <include name="browser_launch"/>
+          <include name="teardown"/>
+          <include name="testCompleteOrderPlacement"/>
+        </methods>
+      </class> <!-- testpkg.Checkout_overview_test -->
+      <class name="testpkg.Checkout_test">
+        <methods>
+          <include name="browser_launch"/>
+          <include name="testCheckoutWithExcelData"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testpkg.Checkout_test -->
+      <class name="testpkg.Product_test">
+        <methods>
+          <include name="browser_launch"/>
+          <include name="teardown"/>
+          <include name="testProductCatalog"/>
+        </methods>
+      </class> <!-- testpkg.Product_test -->
+    </classes>
+  </test> <!-- End-to-End Tests(failed) -->
+</suite> <!-- Failed suite [Swag Labs Automation Suite] -->
