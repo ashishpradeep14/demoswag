@@ -1,337 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="3" failed="4" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-28T10:56:09 IST" name="SwagLab Automation Suite" finished-at="2026-10-28T10:56:19 IST" duration-ms="9947">
+  <suite started-at="2026-10-29T20:17:24 IST" name="Swag Labs Complete Suite" finished-at="2026-10-29T20:17:56 IST" duration-ms="32223">
     <groups>
     </groups>
-    <test started-at="2026-10-28T10:56:09 IST" name="SwagLab Tests" finished-at="2026-10-28T10:56:19 IST" duration-ms="9947">
-      <class name="testpkg.Product_test">
-        <test-method signature="verifySelectProductsAndMoveToCart()[pri:0, instance:testpkg.Product_test@79079097]" started-at="2026-10-28T10:56:17 IST" name="verifySelectProductsAndMoveToCart" finished-at="2026-10-28T10:56:19 IST" duration-ms="1888" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failed to navigate to the cart page! expected [https://www.saucedemo.com/cart.html] but found [https://www.saucedemo.com/inventory.html]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed to navigate to the cart page! expected [https://www.saucedemo.com/cart.html] but found [https://www.saucedemo.com/inventory.html]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at testpkg.Product_test.verifySelectProductsAndMoveToCart(Product_test.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+    <test started-at="2026-10-29T20:17:24 IST" name="All End-to-End, UI, and Negative Tests" finished-at="2026-10-29T20:17:56 IST" duration-ms="32223">
+      <class name="testpkg.Logout_test">
+        <test-method signature="testUserLogoutWorkflow()[pri:0, instance:testpkg.Logout_test@7eac9008]" started-at="2026-10-29T20:17:53 IST" name="testUserLogoutWorkflow" finished-at="2026-10-29T20:17:56 IST" duration-ms="3151" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySelectProductsAndMoveToCart -->
+        </test-method> <!-- testUserLogoutWorkflow -->
+      </class> <!-- testpkg.Logout_test -->
+      <class name="testpkg.Product_test">
+        <test-method signature="testProductCatalog()[pri:0, instance:testpkg.Product_test@179ece50]" started-at="2026-10-29T20:17:42 IST" name="testProductCatalog" finished-at="2026-10-29T20:17:46 IST" duration-ms="4026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductCatalog -->
       </class> <!-- testpkg.Product_test -->
       <class name="testpkg.Login_test">
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:testpkg.Login_test@3bf7ca37]" started-at="2026-10-28T10:56:10 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-10-28T10:56:13 IST" duration-ms="3776" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:testpkg.Login_test@3bf7ca37]" started-at="2026-10-28T10:56:13 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-10-28T10:56:16 IST" duration-ms="2406" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[locked_out_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:testpkg.Login_test@3bf7ca37]" started-at="2026-10-28T10:56:16 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-10-28T10:56:17 IST" duration-ms="1190" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[problem_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-      </class> <!-- testpkg.Login_test -->
-      <class name="basepkg.Base_class">
-        <test-method is-config="true" signature="browser_launch()[pri:0, instance:basepkg.Base_class@1e800aaa]" started-at="2026-10-28T10:55:55 IST" name="browser_launch" finished-at="2026-10-28T10:56:09 IST" duration-ms="14229" status="PASS">
+        <test-method is-config="true" signature="browser_launch()[pri:0, instance:testpkg.Login_test@3eb738bb]" started-at="2026-10-29T20:17:22 IST" name="browser_launch" finished-at="2026-10-29T20:17:24 IST" duration-ms="1687" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_launch -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:basepkg.Base_class@1e800aaa]" started-at="2026-10-28T10:56:20 IST" name="teardown" finished-at="2026-10-28T10:56:27 IST" duration-ms="7562" status="PASS">
+        <test-method signature="testLoginTitleAndLogo()[pri:1, instance:testpkg.Login_test@3eb738bb]" started-at="2026-10-29T20:17:24 IST" name="testLoginTitleAndLogo" finished-at="2026-10-29T20:17:24 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginTitleAndLogo -->
+        <test-method signature="testLoginWithExcelData()[pri:2, instance:testpkg.Login_test@3eb738bb]" started-at="2026-10-29T20:17:24 IST" name="testLoginWithExcelData" finished-at="2026-10-29T20:17:42 IST" duration-ms="18659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithExcelData -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testpkg.Login_test@3eb738bb]" started-at="2026-10-29T20:17:56 IST" name="teardown" finished-at="2026-10-29T20:17:56 IST" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- basepkg.Base_class -->
+      </class> <!-- testpkg.Login_test -->
       <class name="testpkg.Checkout_overview_test">
-        <test-method signature="verifyCheckoutOverviewAndFinish()[pri:0, instance:testpkg.Checkout_overview_test@4e08711f]" started-at="2026-10-28T10:56:19 IST" name="verifyCheckoutOverviewAndFinish" finished-at="2026-10-28T10:56:19 IST" duration-ms="39" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#user\-name"}
-  (Session info: chrome=156.0.8078.48)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c9a67004c9f09bf3ef67543e95cf9207, findElement {using=id, value=user-name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.48, chrome: {chromedriverVersion: 156.0.8078.73 (2f9a11097447..., userDataDir: C:\Users\ASHISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53377}, goog:processID: 18392, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53377/devtoo..., se:cdpVersion: 156.0.8078.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c9a67004c9f09bf3ef67543e95cf9207]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#user\-name"}
-  (Session info: chrome=156.0.8078.48)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c9a67004c9f09bf3ef67543e95cf9207, findElement {using=id, value=user-name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.48, chrome: {chromedriverVersion: 156.0.8078.73 (2f9a11097447..., userDataDir: C:\Users\ASHISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53377}, goog:processID: 18392, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53377/devtoo..., se:cdpVersion: 156.0.8078.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c9a67004c9f09bf3ef67543e95cf9207
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:417)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:411)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.clear(Unknown Source)
-at pagepkg.Login_page.setUsername(Login_page.java:26)
-at testpkg.Checkout_overview_test.verifyCheckoutOverviewAndFinish(Checkout_overview_test.java:21)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="testCompleteOrderPlacement()[pri:0, instance:testpkg.Checkout_overview_test@1fa121e2]" started-at="2026-10-29T20:17:51 IST" name="testCompleteOrderPlacement" finished-at="2026-10-29T20:17:53 IST" duration-ms="1504" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCheckoutOverviewAndFinish -->
+        </test-method> <!-- testCompleteOrderPlacement -->
       </class> <!-- testpkg.Checkout_overview_test -->
       <class name="testpkg.Cart_test">
-        <test-method signature="verifyCartAndProceedToCheckout()[pri:0, instance:testpkg.Cart_test@4d1c00d0]" started-at="2026-10-28T10:56:19 IST" name="verifyCartAndProceedToCheckout" finished-at="2026-10-28T10:56:19 IST" duration-ms="103" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#user\-name"}
-  (Session info: chrome=156.0.8078.48)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c9a67004c9f09bf3ef67543e95cf9207, findElement {using=id, value=user-name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.48, chrome: {chromedriverVersion: 156.0.8078.73 (2f9a11097447..., userDataDir: C:\Users\ASHISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53377}, goog:processID: 18392, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53377/devtoo..., se:cdpVersion: 156.0.8078.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c9a67004c9f09bf3ef67543e95cf9207]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#user\-name"}
-  (Session info: chrome=156.0.8078.48)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c9a67004c9f09bf3ef67543e95cf9207, findElement {using=id, value=user-name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.48, chrome: {chromedriverVersion: 156.0.8078.73 (2f9a11097447..., userDataDir: C:\Users\ASHISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53377}, goog:processID: 18392, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53377/devtoo..., se:cdpVersion: 156.0.8078.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c9a67004c9f09bf3ef67543e95cf9207
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:417)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:411)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.clear(Unknown Source)
-at pagepkg.Login_page.setUsername(Login_page.java:26)
-at testpkg.Cart_test.verifyCartAndProceedToCheckout(Cart_test.java:19)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="testCartWorkflow()[pri:0, instance:testpkg.Cart_test@3b0090a4]" started-at="2026-10-29T20:17:46 IST" name="testCartWorkflow" finished-at="2026-10-29T20:17:49 IST" duration-ms="2162" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCartAndProceedToCheckout -->
+        </test-method> <!-- testCartWorkflow -->
       </class> <!-- testpkg.Cart_test -->
       <class name="testpkg.Checkout_test">
-        <test-method signature="verifyCheckoutInformation()[pri:0, instance:testpkg.Checkout_test@4b2bac3f]" started-at="2026-10-28T10:56:19 IST" name="verifyCheckoutInformation" finished-at="2026-10-28T10:56:19 IST" duration-ms="19" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#user\-name"}
-  (Session info: chrome=156.0.8078.48)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c9a67004c9f09bf3ef67543e95cf9207, findElement {using=id, value=user-name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.48, chrome: {chromedriverVersion: 156.0.8078.73 (2f9a11097447..., userDataDir: C:\Users\ASHISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53377}, goog:processID: 18392, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53377/devtoo..., se:cdpVersion: 156.0.8078.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c9a67004c9f09bf3ef67543e95cf9207]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#user\-name"}
-  (Session info: chrome=156.0.8078.48)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c9a67004c9f09bf3ef67543e95cf9207, findElement {using=id, value=user-name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.48, chrome: {chromedriverVersion: 156.0.8078.73 (2f9a11097447..., userDataDir: C:\Users\ASHISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53377}, goog:processID: 18392, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53377/devtoo..., se:cdpVersion: 156.0.8078.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c9a67004c9f09bf3ef67543e95cf9207
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:417)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:411)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.clear(Unknown Source)
-at pagepkg.Login_page.setUsername(Login_page.java:26)
-at testpkg.Checkout_test.verifyCheckoutInformation(Checkout_test.java:20)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="testCheckoutWithExcelData()[pri:0, instance:testpkg.Checkout_test@3cd3e762]" started-at="2026-10-29T20:17:49 IST" name="testCheckoutWithExcelData" finished-at="2026-10-29T20:17:51 IST" duration-ms="2490" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCheckoutInformation -->
+        </test-method> <!-- testCheckoutWithExcelData -->
       </class> <!-- testpkg.Checkout_test -->
-    </test> <!-- SwagLab Tests -->
-  </suite> <!-- SwagLab Automation Suite -->
+    </test> <!-- All End-to-End, UI, and Negative Tests -->
+  </suite> <!-- Swag Labs Complete Suite -->
 </testng-results>

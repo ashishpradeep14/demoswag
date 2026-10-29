@@ -1,49 +1,52 @@
 package pagepkg;
 
+import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Checkout_page {
     WebDriver driver;
-
-    @FindBy(id = "first-name")
-    WebElement firstNameField;
-
-    @FindBy(id = "last-name")
-    WebElement lastNameField;
-
-    @FindBy(id = "postal-code")
-    WebElement postalCodeField;
-
-    @FindBy(id = "continue")
-    WebElement continueButton;
-
-    @FindBy(id = "cancel")
-    WebElement cancelButton;
+    WebDriverWait wait;
 
     public Checkout_page(WebDriver driver) {
         this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         PageFactory.initElements(driver, this);
     }
 
-    public void setFirstName(String firstName) {
+    @FindBy(id = "first-name")
+    private WebElement firstNameField;
+
+    @FindBy(id = "last-name")
+    private WebElement lastNameField;
+
+    @FindBy(id = "postal-code")
+    private WebElement postalCodeField;
+
+    @FindBy(id = "continue")
+    private WebElement continueButton;
+
+    public void fillCheckoutDetails(String firstName, String lastName, String postalCode) {
+        
+        wait.until(ExpectedConditions.urlContains("checkout-step-one.html"));
+        wait.until(ExpectedConditions.visibilityOf(firstNameField));
+        
         firstNameField.clear();
         firstNameField.sendKeys(firstName);
-    }
-
-    public void setLastName(String lastName) {
+        
         lastNameField.clear();
         lastNameField.sendKeys(lastName);
-    }
-
-    public void setPostalCode(String postalCode) {
+        
         postalCodeField.clear();
         postalCodeField.sendKeys(postalCode);
     }
 
     public void clickContinue() {
+        wait.until(ExpectedConditions.elementToBeClickable(continueButton));
         continueButton.click();
     }
 }

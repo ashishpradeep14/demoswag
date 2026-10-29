@@ -13,41 +13,33 @@ import pagepkg.Product_page;
 public class Checkout_overview_test extends Base_class {
 
     @Test
-    public void verifyCheckoutOverviewAndFinish() {
-        test = extent.createTest("verifyCheckoutOverviewAndFinish");
+    public void testCompleteOrderPlacement() throws InterruptedException {
+        test = extent.createTest("End-to-End Order Placement Test");
 
-        // 1. Login
-        Login_page loginPage = new Login_page(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLogin();
+        driver.get(url);
+        Login_page login = new Login_page(driver);
+        login.loginToApp("standard_user", "secret_sauce");
 
-        // 2. Select products and go to cart
-        Product_page productPage = new Product_page(driver);
-        productPage.selectMultipleProducts(3);
-        productPage.clickCartButton();
+        Product_page product = new Product_page(driver);
+        product.addAllProductsToCart();
+        
+        driver.get("https://www.saucedemo.com/cart.html");
+        Cart_page cart = new Cart_page(driver);
+        cart.clickCheckout();
 
-        // 3. Click Checkout
-        Cart_page cartPage = new Cart_page(driver);
-        cartPage.clickCheckout();
+        Checkout_page checkout = new Checkout_page(driver);
+        checkout.fillCheckoutDetails("Ashish", "Pradeep", "695001");
+        checkout.clickContinue();
 
-        // 4. Fill in customer information and continue
-        Checkout_page checkoutPage = new Checkout_page(driver);
-        checkoutPage.setFirstName("Ashish");
-        checkoutPage.setLastName("Kumar");
-        checkoutPage.setPostalCode("123456");
-        checkoutPage.clickContinue();
-        test.info("Completed information step and reached Checkout Overview page");
+        Checkout_overview_page overview = new Checkout_overview_page(driver);
+        overview.clickFinish();
 
-        // 5. Click Finish on the Overview page
-        Checkout_overview_page overviewPage = new Checkout_overview_page(driver);
-        overviewPage.clickFinish();
-        test.info("Clicked finish button");
-
-        // 6. Verification/Assertion (Checks if it navigates to the checkout-complete page)
-        String expectedCompleteUrl = "https://www.saucedemo.com/checkout-complete.html";
-        Assert.assertEquals(driver.getCurrentUrl(), expectedCompleteUrl, "Failed to complete checkout!");
-
-        test.pass("Checkout overview and finish test passed successfully");
+        String confirmation = overview.getConfirmationMessage();
+        Assert.assertEquals(confirmation, "Thank you for your order!", "Order confirmation text mismatch!");
+        
+        test.pass("Order completed successfully with confirmation message: " + confirmation);
+        
+        // Console print statement for Order Placed message
+        System.out.println("Order placed successfully! Confirmation message: " + confirmation);
     }
 }

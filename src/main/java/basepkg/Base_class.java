@@ -1,5 +1,6 @@
 package basepkg;
 
+import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
@@ -18,13 +19,21 @@ public class Base_class {
     @BeforeSuite
     public void browser_launch() {
         extent = Reporterclass.sam();
+        
         driver = new ChromeDriver();
-        driver.get(url);
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        
+        driver.get(url);
     }
 
     @AfterSuite
     public void teardown() {
-        driver.quit();
-        extent.flush();
-    }}
+        if (driver != null) {
+            driver.quit();
+        }
+        if (extent != null) {
+            extent.flush();
+        }
+    }
+}

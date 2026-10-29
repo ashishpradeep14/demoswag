@@ -5,32 +5,39 @@
     <classes>
       <class name="testpkg.Product_test">
         <methods>
-          <include name="verifySelectProductsAndMoveToCart"/>
           <include name="browser_launch"/>
           <include name="teardown"/>
+          <include name="testAddProducts"/>
         </methods>
       </class> <!-- testpkg.Product_test -->
       <class name="testpkg.Checkout_test">
         <methods>
           <include name="browser_launch"/>
+          <include name="testCheckoutWithExcelData"/>
           <include name="teardown"/>
-          <include name="verifyCheckoutInformation"/>
         </methods>
       </class> <!-- testpkg.Checkout_test -->
       <class name="testpkg.Checkout_overview_test">
         <methods>
           <include name="browser_launch"/>
-          <include name="verifyCheckoutOverviewAndFinish"/>
           <include name="teardown"/>
+          <include name="testCompleteOrder"/>
         </methods>
       </class> <!-- testpkg.Checkout_overview_test -->
       <class name="testpkg.Cart_test">
         <methods>
+          <include name="testCartCheckoutNavigation"/>
           <include name="browser_launch"/>
           <include name="teardown"/>
-          <include name="verifyCartAndProceedToCheckout"/>
         </methods>
       </class> <!-- testpkg.Cart_test -->
+      <class name="testpkg.Login_test">
+        <methods>
+          <include name="browser_launch"/>
+          <include name="teardown"/>
+          <include name="testLoginWithExcelData"/>
+        </methods>
+      </class> <!-- testpkg.Login_test -->
     </classes>
   </test> <!-- SwagLab Tests(failed) -->
 </suite> <!-- Failed suite [SwagLab Automation Suite] -->

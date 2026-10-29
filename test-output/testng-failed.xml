@@ -1,36 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [SwagLab Automation Suite]">
-  <test thread-count="5" name="SwagLab Tests(failed)">
+<suite name="Failed suite [Swag Labs Complete Suite]">
+  <test thread-count="5" name="All End-to-End, UI, and Negative Tests(failed)">
     <classes>
       <class name="testpkg.Product_test">
         <methods>
-          <include name="verifySelectProductsAndMoveToCart"/>
           <include name="browser_launch"/>
+          <include name="testProductCatalog"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- testpkg.Product_test -->
-      <class name="testpkg.Checkout_test">
-        <methods>
-          <include name="browser_launch"/>
-          <include name="teardown"/>
-          <include name="verifyCheckoutInformation"/>
-        </methods>
-      </class> <!-- testpkg.Checkout_test -->
-      <class name="testpkg.Checkout_overview_test">
-        <methods>
-          <include name="browser_launch"/>
-          <include name="verifyCheckoutOverviewAndFinish"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- testpkg.Checkout_overview_test -->
-      <class name="testpkg.Cart_test">
-        <methods>
-          <include name="browser_launch"/>
-          <include name="teardown"/>
-          <include name="verifyCartAndProceedToCheckout"/>
-        </methods>
-      </class> <!-- testpkg.Cart_test -->
     </classes>
-  </test> <!-- SwagLab Tests(failed) -->
-</suite> <!-- Failed suite [SwagLab Automation Suite] -->
+  </test> <!-- All End-to-End, UI, and Negative Tests(failed) -->
+</suite> <!-- Failed suite [Swag Labs Complete Suite] -->
