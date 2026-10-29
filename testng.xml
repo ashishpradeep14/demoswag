@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="SwagLab Automation Suite">
+    <test thread-count="5" name="SwagLab Tests">
+        <classes>
+            <class name="basepkg.Base_class"/>
+            <class name="testpkg.Login_test"/>
+            <class name="testpkg.Product_test"/>
+            <class name="testpkg.Cart_test"/>
+            <class name="testpkg.Checkout_test"/>
+            <class name="testpkg.Checkout_overview_test"/>
+        </classes>
+    </test>
+</suite>

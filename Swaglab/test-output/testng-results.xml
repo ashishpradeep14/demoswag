@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-27T11:40:58 IST" name="Default suite" finished-at="2026-10-27T11:41:12 IST" duration-ms="13821">
+    <groups>
+    </groups>
+    <test started-at="2026-10-27T11:40:58 IST" name="Default test" finished-at="2026-10-27T11:41:12 IST" duration-ms="13821">
+      <class name="reportgenerationpkg.reportinmaven">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:40:58 IST" name="setupReport" finished-at="2026-10-27T11:40:58 IST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="openBrowser(org.testng.ITestResult)[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:40:58 IST" name="openBrowser" finished-at="2026-10-27T11:41:00 IST" duration-ms="1577" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=reportinmaven.browserEnvironmentTest()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="browserEnvironmentTest()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:00 IST" name="browserEnvironmentTest" finished-at="2026-10-27T11:41:00 IST" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserEnvironmentTest -->
+        <test-method is-config="true" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:00 IST" name="captureStatus" finished-at="2026-10-27T11:41:00 IST" duration-ms="181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=browserEnvironmentTest status=SUCCESS method=reportinmaven.browserEnvironmentTest()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureStatus -->
+        <test-method is-config="true" signature="openBrowser(org.testng.ITestResult)[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:00 IST" name="openBrowser" finished-at="2026-10-27T11:41:01 IST" duration-ms="1081" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=reportinmaven.buttontextverification()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="buttontextverification()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:01 IST" name="buttontextverification" finished-at="2026-10-27T11:41:01 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buttontextverification -->
+        <test-method is-config="true" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:01 IST" name="captureStatus" finished-at="2026-10-27T11:41:03 IST" duration-ms="1374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=buttontextverification status=SUCCESS method=reportinmaven.buttontextverification()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureStatus -->
+        <test-method is-config="true" signature="openBrowser(org.testng.ITestResult)[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:03 IST" name="openBrowser" finished-at="2026-10-27T11:41:04 IST" duration-ms="1129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=reportinmaven.loginButtonUsabilityTest()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="loginButtonUsabilityTest()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:04 IST" name="loginButtonUsabilityTest" finished-at="2026-10-27T11:41:04 IST" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginButtonUsabilityTest -->
+        <test-method is-config="true" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:04 IST" name="captureStatus" finished-at="2026-10-27T11:41:05 IST" duration-ms="1148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginButtonUsabilityTest status=SUCCESS method=reportinmaven.loginButtonUsabilityTest()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureStatus -->
+        <test-method is-config="true" signature="openBrowser(org.testng.ITestResult)[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:05 IST" name="openBrowser" finished-at="2026-10-27T11:41:06 IST" duration-ms="1080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=reportinmaven.pageReliabilityTest()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="pageReliabilityTest()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:06 IST" name="pageReliabilityTest" finished-at="2026-10-27T11:41:06 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageReliabilityTest -->
+        <test-method is-config="true" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:06 IST" name="captureStatus" finished-at="2026-10-27T11:41:07 IST" duration-ms="805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=pageReliabilityTest status=SUCCESS method=reportinmaven.pageReliabilityTest()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureStatus -->
+        <test-method is-config="true" signature="openBrowser(org.testng.ITestResult)[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:07 IST" name="openBrowser" finished-at="2026-10-27T11:41:09 IST" duration-ms="1864" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=reportinmaven.performanceTest()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="performanceTest()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:09 IST" name="performanceTest" finished-at="2026-10-27T11:41:09 IST" duration-ms="33" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class java.lang.Double cannot be cast to class java.lang.Long (java.lang.Double and java.lang.Long are in module java.base of loader 'bootstrap')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class java.lang.Double cannot be cast to class java.lang.Long (java.lang.Double and java.lang.Long are in module java.base of loader 'bootstrap')
+at reportgenerationpkg.reportinmaven.performanceTest(reportinmaven.java:158)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performanceTest -->
+        <test-method is-config="true" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:09 IST" name="captureStatus" finished-at="2026-10-27T11:41:10 IST" duration-ms="1160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=performanceTest status=FAILURE method=reportinmaven.performanceTest()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureStatus -->
+        <test-method is-config="true" signature="openBrowser(org.testng.ITestResult)[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:10 IST" name="openBrowser" finished-at="2026-10-27T11:41:11 IST" duration-ms="1008" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=reportinmaven.titleverification()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="titleverification()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:11 IST" name="titleverification" finished-at="2026-10-27T11:41:11 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleverification -->
+        <test-method is-config="true" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:11 IST" name="captureStatus" finished-at="2026-10-27T11:41:12 IST" duration-ms="264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=titleverification status=SUCCESS method=reportinmaven.titleverification()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:reportgenerationpkg.reportinmaven@44c03695]" started-at="2026-10-27T11:41:12 IST" name="teardown" finished-at="2026-10-27T11:41:12 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- reportgenerationpkg.reportinmaven -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
